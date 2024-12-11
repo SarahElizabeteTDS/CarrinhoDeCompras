@@ -136,6 +136,8 @@
             });
             
             let totalCompra = document.querySelector('.total-compra');
+            total = Math.round(total).toFixed(2);
+            total = total.replace('.', ',');
             totalCompra.textContent = total;
         }
         
